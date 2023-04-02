@@ -54,7 +54,7 @@ async function build() {
             body: `{"code":"${code}","client_id":"${process.env.GITHUB_CLIENT_ID}","client_secret":"${process.env.GITHUB_CLIENT_SECRET}"}`
           });
         console.log(process.env.GITHUB_CLIENT_ID, process.env.GITHUB_CLIENT_SECRET, code)
-        const accessToken = ((await accestokenreq.json()) as any as {access_token:string}).access_token;
+        const accessToken = ((await accestokenreq.json()) as {access_token:string}).access_token;
 
         if(!accessToken) return reply.code(401).send('Invalid code');
         const userreq = await fetch('https://api.github.com/user', {
