@@ -1,7 +1,7 @@
 # GitHub social login
 API simple creada con NodeJS, fastify y MongoDB para iniciar sesión con GitHub y marcar repositorios.
 
-
+[![CodeFactor](https://www.codefactor.io/repository/github/v1ctorio/jobarcelona-backend/badge)](https://www.codefactor.io/repository/github/v1ctorio/jobarcelona-backend)
 
 ## Endpoints
 | Endpoint | Método | Descripción |
